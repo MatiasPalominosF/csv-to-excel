@@ -1,19 +1,21 @@
 # CSV to Excel Converter
 
-Este script de Python convierte archivos CSV a formato Excel (XLSX), ajustando automáticamente el ancho de las columnas y la altura de las filas para mejorar la legibilidad.
+Este script de Python convierte archivos CSV a formato Excel (XLSX), ajustando automáticamente el ancho de las columnas y la altura de las filas para mejorar la legibilidad. Además, incluye una barra de progreso interactiva para visualizar el avance del proceso en tiempo real.
 
 ## Características
 
-- Convierte múltiples archivos CSV a Excel en lote
-- Ajusta automáticamente el ancho de las columnas basado en el contenido
-- Ajusta la altura de las filas para una mejor visualización
-- Preserva los nombres de los archivos originales, cambiando solo la extensión
+- 🔁 Convierte múltiples archivos CSV a Excel en lote
+- 📏 Ajusta automáticamente el ancho de las columnas basado en el contenido
+- 📐 Ajusta la altura de las filas para una mejor visualización
+- 🧾 Preserva los nombres de los archivos originales, cambiando solo la extensión
+- ⏱ Muestra una barra de progreso dinámica con tiempo transcurrido, archivo actual y filas procesadas
 
 ## Requisitos
 
 - Python 3.x
 - pandas
 - openpyxl
+- tqdm
 
 ## Instalación
 
@@ -37,9 +39,11 @@ python programa.py
 
 ## Estructura del Proyecto
 
-- `programa.py`: Script principal
-- `archivos/`: Carpeta para los archivos CSV de entrada
-- `archivos_excel/`: Carpeta donde se guardan los archivos Excel convertidos
+```
+└── 📁archivos  # Carpeta para los archivos CSV de entrada
+└── 📁archivos_excel # Carpeta donde se guardan los archivos Excel convertidos
+└── programa.py # Script principal
+```
 
 ## Personalización
 
